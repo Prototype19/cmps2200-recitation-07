@@ -12,6 +12,8 @@ $W(n) \in O(n+m)$
 
 - **4)**
 
+In the worse case, and in all other cases, the number of time that the reachable function will be called is one as the number of times its called is not dependent on the size of the input graph.
+
 - **5)**
 
 - **7)**
