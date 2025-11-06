@@ -66,7 +66,8 @@ def n_components(graph):
     reachable_nodes_set.add(frozenset(reachable_nodes))
 
     # iterate through each node in remaining in nodes set and do remove node and add to reachable nodes set like above
-    for root_node in nodes:
+    while nodes:
+        root_node = nodes.pop()
         new_reachable_nodes = reachable(graph, root_node)
         nodes -= new_reachable_nodes
         reachable_nodes_set.add((frozenset(new_reachable_nodes)))
